@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Hockey</title>
-    <link rel="icon" href="src//img/d00edf54669efa3c1de9bda71c20b324-hockey-puck-in-movement-illustration.png" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="src//style.css" />
+    <link rel="icon" href="src/img/d00edf54669efa3c1de9bda71c20b324-hockey-puck-in-movement-illustration.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
 </head>
 <body>
     <div class="Table">
-        <div class="goal"></div>
         <div class="midline"></div>
-        <div class="goal"></div>
+        <div class="ball"></div>
+        <div class="paddle one" id="human"></div>
+        <div class="paddle two" id="CPU"></div>
+    </div>
+    <div class="display">
+        <div class="score1">0</div>
+        <div class="score2">0</div>
     </div>
     <script src="myscripts.js"></script>
 </body>

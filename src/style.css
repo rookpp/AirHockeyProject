@@ -2,31 +2,35 @@
 body{
     
 }
-.Table{
+.Table {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1800px;
     height: 840px;
     border-style: solid;
     border-width: 15px;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url(img/tableb.jpg);
-    background-size: cover;
     border-radius: 10px;
     box-shadow: 10px 10px lightgray;
+}
 
+.midline {
+    border-style: dotted;
+    border-color: red;
+    height: 830px;
+    width: 5px;
 }
-.goal{
-    
-    border-style: solid;
-    border-width: 5px;
-    
-    height: 300px;
+
+.paddle
+{
+    width: 5px;
+    height: 180px;
+    position: relative;
+    background-color: black;
 }
-.midline{
-    border-width: 5px;
-    border-style: solid;
-    color: red;
-    height:830px;
+.paddle.one{
+    left: 48% ;
+}
+.paddle.two{
+    right: 48.8% ;
 }

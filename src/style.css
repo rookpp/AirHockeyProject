@@ -9,18 +9,24 @@
 body{
     background-color: var(--backcolor);
 }
-
-
-.midline {
-    border-style: dotted;
-    border-color: red;
-    height: 100vh;
-    width: 5px;
-    margin: auto;
-    transform:translate(80%);
-
+.statistics{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 7vh;
+    color: white;
 }
-
+.statistics >*{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 2vh;
+    margin: 1vh 0;
+    opacity: .5;
+}
+.statistics > :first-child {
+    text-align: right;
+    border-right: .5vh solid white;
+  }
 .paddle
 {
     --pos:50;
@@ -48,5 +54,5 @@ body{
     width: 4vh;
     height: 4vh;
     transform:translate(-50%,-50%);
-    border-radius: 20px;
+    border-radius: 50%;
 }

@@ -38,21 +38,16 @@ body{
     
     background-color: white;
 }
-.paddle.one{
-    left: 1vw ;
-}
 
-.ball   
+
+#ball   
 {
-    --x:50;
-    --y:50;
-    --pos:50;
-    top: calc(var(--y)*1vh);
-    left: calc(var(--x)*1vw);
     position: absolute;
+
+    top: 500px;
+    left: 375px;
     background-color: var(--bcolor);
     width: 4vh;
     height: 4vh;
-    transform:translate(-50%,-50%);
     border-radius: 50%;
 }

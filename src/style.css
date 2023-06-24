@@ -75,7 +75,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-around;
     font-family:impact;
     font-size: 3vh;
     color: white;

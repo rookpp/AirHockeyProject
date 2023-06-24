@@ -32,9 +32,10 @@ body{
 #paddle
 {
     position: absolute;
-    top: 500px;
+    top: 40vh;
     width: 1vh;
     height: 20vh;
+    left: 1vw;
     
     background-color: white;
 }
@@ -44,8 +45,8 @@ body{
 {
     position: absolute;
 
-    top: 500px;
-    left: 375px;
+    top: 50vh;
+    left: 50vw;
     background-color: var(--bcolor);
     width: 4vh;
     height: 4vh;

@@ -10,11 +10,15 @@ body{
     background-color: var(--backcolor);
 }
 .statistics{
+    font-family:impact;
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-size: 7vh;
     color: white;
+    width:fit-content;
+    border-style: groove;
+    margin-left: 47vw;
 }
 .statistics >*{
     flex-grow: 1;
@@ -22,26 +26,22 @@ body{
     padding: 0 2vh;
     margin: 1vh 0;
     opacity: .5;
+    
 }
-.statistics > :first-child {
-    text-align: right;
-    border-right: .5vh solid white;
-  }
-.paddle
+
+#paddle
 {
-    --pos:50;
-    top: calc(var(--pos)*1vh);
+    position: absolute;
+    top: 500px;
     width: 1vh;
     height: 20vh;
-    position: absolute;
+    
     background-color: white;
 }
 .paddle.one{
     left: 1vw ;
 }
-.paddle.two{
-    right: 1vw;
-}
+
 .ball   
 {
     --x:50;

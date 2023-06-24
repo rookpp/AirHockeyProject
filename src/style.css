@@ -52,3 +52,14 @@ body{
     height: 4vh;
     border-radius: 50%;
 }
+#message{
+    font-family:impact;
+    font-weight: bold;
+    font-size: 5vh;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center  ;
+}

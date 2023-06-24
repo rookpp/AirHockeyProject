@@ -1,3 +1,8 @@
+let scoreboard = document.getElementById("scoreP")
+let gamemessage = document.getElementById("message")
+let score = 0
+let gameplay = false
+let starts = 0
 let paddle = 
 {
     "direction":0,
@@ -11,6 +16,12 @@ addEventListener("keypress", (event) => {
     if(event.key == "s"){
         paddle["direction"] = 1
     }
+    if (gameplay== false && starts == 0)
+    {
+        gameplay=true
+        gamemessage.innerText = "";
+    }
+
 });
 addEventListener("keyup",(event) =>{
     paddle["direction"] = 0
@@ -54,17 +65,32 @@ function collision(){
         if (ball['x'] <= 1)
         {
             ball["directionx"]*=-1
+            score+=1
         }
         
+    }
+    if (ball['x']<0)
+    {
+        gameplay = false
+        starts+=1
+        gamemessage.innerText= "Game over! \n Score: "+score+"\n Refresh page to play again!";
     }
 }
 
 //Frame Updates
-setInterval(function(){
-    //move(ball)
-    collision()
-    pmove(paddle)
-    pmove(ball)
-    console.log(ball["direction"])
-},10);
+{
+    setInterval(function(){
+        //move(ball)
+        if(gameplay == true)
+        {
+        collision()
+        pmove(paddle)
+        pmove(ball)
+        console.log(ball["direction"])
+        scoreboard.innerText = score;
+        console.log("check")
+        }
+    },10);
+}
+
 

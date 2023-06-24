@@ -1,10 +1,10 @@
 
 :root{
-    --h: 180;
-    --htwo: 350;
+    --h: 520;
+    --htwo: 450;
     --s:100%;
     --backcolor: hsl(var(--h),var(--s),20%);
-    --bcolor: hsl(var(--htwo),var(--s),20%);
+    --bcolor: hsl(var(--htwo),var(--s),0%);
 }
 body{
     background-color: var(--backcolor);
@@ -54,7 +54,6 @@ body{
 }
 #message{
     font-family:impact;
-    font-weight: bold;
     font-size: 5vh;
     color: white;
     position: absolute;
@@ -62,4 +61,34 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center  ;
+}
+.what{
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+}
+.menu{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-between;
+    font-family:impact;
+    font-size: 3vh;
+    color: white;
+    letter-spacing: .1em;
+
+}
+button{
+    width: 40vh;
+    height: 12vh;
+    font-family:impact;
+    font-size: 5vh;
+    color: var(--bcolor);
+}
+button:hover{
+    background-color:gray;
 }
